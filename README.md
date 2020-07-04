@@ -8,14 +8,14 @@ We build a convolutional neural network with Keras to analyze where a person in 
 
 We setup the above model using a "cell" model. There are two types of cell, the convolutional cell and the fully-connected cell. We make the cells to be more general for possible future adaption. First, the convolutional cell contains the convolutional layer, pooling layer, dropout regularization, batch normalization and a possible "skip-net".
 
-<img src="figures\ConvCell.png" width = 50%>
+<img src="figures\ConvCell.png" width = 40%>
 
-<img src="figures\FCCell.png" width = 50%>
+<img src="figures\FCCell.png" width = 30%>
 
-<img src="figures\CellsSchematics.png" width = 60%>
+<img src="figures\CellsSchematics.png" width = 50%>
 
 <img src="figures\ModelSummary.png" width = 60%>
 
 <img src="figures\Training.png" width = 100%>
 
-<img src="figures\PredictResult.png" width = 30%>
+<img src="figures\PredictResult.png" width = 25%>
