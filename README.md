@@ -18,9 +18,13 @@ The following is the CNN shown in cell schematics. First, the images goes throug
 
 <img src="figures\CellsSchematics.png" width = 50%>
 
-This is the summary of our models. There are a total of 23,721 trainable parameters. The distribution of parameters and the structure of CNN are shown in the figure below.
+<hr>
+
+This is the summary of our models. There are a total of 23,721 trainable parameters. The distribution of parameters and the structure of CNN are shown in the figure below. We trained the model in 16 minibatches over 40 epoches.
 
 <img src="figures\ModelSummary.png" width = 60%>
+
+We evaluate the model on a separate test set and demonstrated it accuracy. Finally, we test it using a single photo and observe the prediction. The ouput 1 means the person in the photo is smiling, the ouput 0 means the person is not. We also print the photo in the output for visual inspection.
 
 <img src="figures\Training.png" width = 100%>
 
