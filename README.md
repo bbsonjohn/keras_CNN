@@ -1,4 +1,15 @@
 # keras_CNN
+
+Project: Binary Classification Using Convolutional Neural Network
+
+Author: <a href="https://bbsonjohn.github.io">John Leung</a>
+
+Date: 2020
+
+<hr>
+
+## Feature:
+
 An example of convolutional neural network using Keras as framework.
 We acknowledge **deeplearning.ai** for inspiring the program and providing the data set.
 
