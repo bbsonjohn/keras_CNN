@@ -17,7 +17,7 @@ We build a convolutional neural network with Keras to analyze where a person in 
 
 <img src="figures\CompGraph.png" width = 70%>
 
-We setup the above model using a "cell" model. There are two types of cell, the convolutional cell and the fully-connected cell. We make the cells to be more general for possible future adaption. First, the convolutional cell contains the convolutional layer, pooling layer, dropout regularization, batch normalization and a possible "skip-net". Skip-net allows the activation to skip through layers should they produce identity action. The concrete ideal is shown in the full cell schematics 3 figures below.
+We setup the above model using a "cell" model. There are two types of cell, the convolutional cell and the fully-connected cell. We make the cells to be more general for possible future adaption. First, the convolutional cell contains the convolutional layer, pooling layer, dropout regularization, batch normalization and an optional residual neural network (ResNet). ResNet allows the activation to skip through layers should they produce identity action. The concrete ideal is shown in the full cell schematics 3 figures below.
 
 <img src="figures\ConvCell.png" width = 40%>
 
@@ -25,7 +25,7 @@ The one below is a fully-connected cell. The main component is a fully connected
 
 <img src="figures\FCCell.png" width = 30%>
 
-The following is the CNN shown in cell schematics. First, the images goes through layers of convolutional cells. Then, it goes through layers of fully-connected cells. Finally, it ouputs a binary classification activation. At the convolutional cell section, we cann see how skip-net in action. An intermediate activation is skewed from the output of a convolutional cell. Then it skips across one or a few cells, and connects directly to another convolutional cell downstream. The "shortcut activation" is summed to the main variable flow, in a way according to the definition of convolutional cell we defined above. 
+The following is the CNN shown in cell schematics. First, the images goes through layers of convolutional cells. Then, it goes through layers of fully-connected cells. Finally, it ouputs a binary classification activation. At the convolutional cell section, we can see how ResNet is in action. An intermediate activation is skewed from the output of a convolutional cell. Then it skips across one or a few cells, and connects directly to another convolutional cell downstream. The "shortcut activation" is summed to the main variable flow, in a way according to the definition of convolutional cell we defined above. 
 
 <img src="figures\CellsSchematics.png" width = 50%>
 
